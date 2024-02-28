@@ -1,0 +1,54 @@
+
+
+.common-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    padding: 11px 35px;
+    overflow: hidden;
+}
+
+.common-button img {
+    margin-left: 10px;
+}
+
+.common-button:hover {
+    background: #9C7339;
+    border-color: #9C7339;
+}
+
+.common-button:before {
+    content: "";
+    background-image: url(./assets/images/btn-layer.svg);
+    width: 295px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.common-button:after {
+    content: "";
+    background-image: url(./assets/images/btn-layer.svg);
+    width: 295px;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    top: 0;
+}
+.common-button:hover:before {
+    left: -60px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+}
+.common-button:hover:after {
+    right: -60px;
+    opacity: 1;
+    
+}
