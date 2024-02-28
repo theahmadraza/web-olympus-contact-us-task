@@ -24,12 +24,12 @@ function Header() {
             <img className="h-10 w-auto" src={HeaderLogo} alt="" />
           </a>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12 ">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-white"
+              className="text-sm font-semibold leading-6 text-white menu-link"
             >
               {item.name}
             </a>
@@ -37,7 +37,7 @@ function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end gap-x-6">
           <div className="hidden lg:block">
-            <Link className="common-button" to={"/"}>
+            <Link className="contact-button" to={"/"}>
               CONTACT US
               <img src={ArrowBtnSvg}></img>
             </Link>
@@ -89,7 +89,7 @@ function Header() {
                 ))}
               </div>
               <div className="py-6">
-                <Link className="common-button" to={"/"}>
+                <Link className="contact-button" to={"/"}>
                   CONTACT US
                   <img src={ArrowBtnSvg}></img>
                 </Link>
