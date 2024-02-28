@@ -1,15 +1,16 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Contact from "./pages/Contact";
 
-import './App.css'
+import "./App.css";
 
 function App() {
-
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world
-    </h1>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
